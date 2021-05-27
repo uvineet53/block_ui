@@ -51,12 +51,13 @@ Check out examples section, for more examples of  _block_ui_.
 
 ## Properties
 Here are the different properties of block_ui that you can use to customise it.
-| Properties | Description |
-| ------ | ------ |
-| context | _Buildcontext context_ |
-| child | _Add a different widget in the center. You can also add custom loaders/text/images, etc._ |
-| backgroundColor | _Change background color_ |
-| backgroundWidget | _Change background widget_ |
+
+| Properties  | Description  |
+| ------------ | ------------ |
+|  context | _Buildcontext context_  |
+| child  |   _Add a different widget in the center. You can also add custom loaders/text/images, etc._ |
+|  backgroundColor | _Change background color_  |
+| backgroundWidget  | _Change background widget_  |
 
 ## Development
 
@@ -65,4 +66,6 @@ Want to contribute? Great!
 ## License
 
 MIT
+
+
 

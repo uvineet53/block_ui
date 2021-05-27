@@ -8,3 +8,9 @@
 ## 0.0.2 - 2021-05-27
 
 * Updated Readme
+
+## 0.0.3 - 2021-05-27
+
+* Added Properties
+* Updated Readme
+
