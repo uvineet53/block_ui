@@ -4,3 +4,7 @@
 * Change Background Color,
 * Use Any Widget as a loader,
 * Use Any Widget as background,
+
+## 0.0.2 - 2021-05-27
+
+* Updated Readme
