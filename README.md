@@ -1,14 +1,68 @@
 # block_ui
+## _Easily disable UI during async operation_
 
-Fully customizable flutter package to disbale UI interactions using loaders during asynchronous actions.
 
-## Getting Started
+Block UI is a amazing package that helps you add an overlay loader during all your async
+operations. 
+### Here's how :
 
-This project is a starting point for a Dart
-[package](https://flutter.dev/developing-packages/),
-a library module containing code that can be shared easily across
-multiple Flutter or Dart projects.
+- _BlockUi.show(context)_ - Shows loader overlay✨
+- _BlockUi.hide(context)_ - Hides the overlay after operation✨
 
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.dev/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+
+## Features
+
+- Fully Customizable Overlays
+- Image Background Support
+- Use a custom loader
+
+
+## Usage
+
+### 1. Simple Overlay
+
+```
+ElevatedButton(
+    onPressed:(){
+        BlockUi.show(context);
+        //Async Operation (For e.g Future.delayed(Duration(milliseconds: 1000))
+        BlockUi.hide(context);
+    }
+)
+```
+
+
+### 2. Customised Overlay
+
+```
+ElevatedButton(
+    onPressed:(){
+        BlockUi.show(
+        context,
+        backgroundColor: Colors.black, // Change Background Color
+        child: Text("Please Wait..."), // Change the center widget
+        );
+        //Async Operation (For e.g Future.delayed(Duration(milliseconds: 1000))
+        BlockUi.hide(context);
+    }
+)
+```
+Check out examples section, for more examples of  _block_ui_.
+
+## Properties
+Here are the different properties of block_ui that you can use to customise it.
+| Properties | Description |
+| ------ | ------ |
+| context | _Buildcontext context_ |
+| child | _Add a different widget in the center. You can also add custom loaders/text/images, etc._ |
+| backgroundColor | _Change background color_ |
+| backgroundWidget | _Change background widget_ |
+
+## Development
+
+Want to contribute? Great!
+[Contribute Here](https://github.com/uvineet53/block_ui)
+## License
+
+MIT
+
