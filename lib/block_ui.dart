@@ -3,12 +3,15 @@ library block_ui;
 import 'package:flutter/material.dart';
 
 class BlockUi {
+  ///Default static values for various parameters in BlockUi Class
   static const Widget _centerWidget = CircularProgressIndicator();
   static const Color _backgroundColor = Colors.transparent;
   static const Widget _backgroundWidget = CircularProgressIndicator(
     color: Colors.transparent,
     backgroundColor: Colors.transparent,
   );
+
+  ///Function to Show the loader using context
   static void show(
     BuildContext context, {
     Widget child = _centerWidget,
@@ -43,6 +46,7 @@ class BlockUi {
     });
   }
 
+  ///Function to hide the loader using context
   static void hide(BuildContext context) {
     Navigator?.of(context).pop();
   }

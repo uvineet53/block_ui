@@ -1,6 +1,6 @@
 # block_ui
 
-A new Flutter package project.
+Fully customizable flutter package to disbale UI interactions using loaders during asynchronous actions.
 
 ## Getting Started
 

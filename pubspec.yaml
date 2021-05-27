@@ -1,7 +1,8 @@
 name: block_ui
-description: A new Flutter package project.
+description: Fully customizable flutter package to disbale UI interactions using loaders during asynchronous actions.
 version: 0.0.1
-homepage: null
+author: Vineet Upadhyay<uvineet53@gmail.com>
+homepage: https://github.com/uvineet53/block_ui
 
 environment:
   sdk: ">=2.12.0 <3.0.0"
