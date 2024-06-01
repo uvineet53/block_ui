@@ -10,7 +10,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Block Ui Demo',
+      title: 'block ui demo',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
@@ -24,25 +24,43 @@ class MyHomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Block Ui Demo"),
+        title: Text("block ui demo"),
         centerTitle: true,
       ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            ElevatedButton(
+            Padding(
+              padding: const EdgeInsets.only(bottom: 10.0),
+              child: Text("try 'em out!"),
+            ),
+            FilledButton(
+              style: ButtonStyle(
+                shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                  RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(10.0),
+                  ),
+                ),
+              ),
               onPressed: () async {
                 BlockUi.show(context);
                 await Future.delayed(Duration(milliseconds: 1000));
                 BlockUi.hide(context);
               },
-              child: Text("Open Default Loader"),
+              child: Text("open default loader"),
             ),
             const SizedBox(
-              height: 10,
+              height: 5,
             ),
-            ElevatedButton(
+            FilledButton(
+              style: ButtonStyle(
+                shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                  RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(10.0),
+                  ),
+                ),
+              ),
               onPressed: () async {
                 BlockUi.show(context,
                     backgroundColor: Colors.green,
@@ -50,12 +68,19 @@ class MyHomePage extends StatelessWidget {
                 await Future.delayed(Duration(milliseconds: 1000));
                 BlockUi.hide(context);
               },
-              child: Text("Custom Loader"),
+              child: Text("custom loader"),
             ),
             const SizedBox(
-              height: 10,
+              height: 5,
             ),
-            ElevatedButton(
+            FilledButton(
+              style: ButtonStyle(
+                shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                  RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(10.0),
+                  ),
+                ),
+              ),
               onPressed: () async {
                 BlockUi.show(context,
                     backgroundColor: Colors.blue,
@@ -70,12 +95,19 @@ class MyHomePage extends StatelessWidget {
                 await Future.delayed(Duration(milliseconds: 1000));
                 BlockUi.hide(context);
               },
-              child: Text("Custom Loader with Text"),
+              child: Text("custom loader with text"),
             ),
             const SizedBox(
-              height: 10,
+              height: 5,
             ),
-            ElevatedButton(
+            FilledButton(
+              style: ButtonStyle(
+                shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                  RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(10.0),
+                  ),
+                ),
+              ),
               onPressed: () async {
                 BlockUi.show(context,
                     backgroundWidget: Image.network(
@@ -89,7 +121,7 @@ class MyHomePage extends StatelessWidget {
                 await Future.delayed(Duration(milliseconds: 2000));
                 BlockUi.hide(context);
               },
-              child: Text("Custom Loader with Image"),
+              child: Text("custom loader with image"),
             ),
           ],
         ),
