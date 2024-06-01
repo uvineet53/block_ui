@@ -14,3 +14,9 @@
 * Added Properties
 * Updated Readme
 
+## 0.0.4 - 2024-06-02
+
+* Updates to performance
+* Updated example app
+* Updated Readme
+
