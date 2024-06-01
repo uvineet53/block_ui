@@ -8,7 +8,7 @@ const Widget _defaultBackgroundWidget = CircularProgressIndicator(
   color: Colors.transparent,
   backgroundColor: Colors.transparent,
 );
-
+ 
 class BlockUi {
   static void show(
     BuildContext context, {
